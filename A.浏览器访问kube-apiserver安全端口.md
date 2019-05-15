@@ -11,7 +11,7 @@
 keytool -import -v -trustcacerts -alias appmanagement -file "PATH...\\ca.pem" -storepass password -keystore cacerts
 ```
 
-再次访问 https://172.27.128.150:6443/，已信任，但提示 401，未授权的访问：
+再次访问 https://192.168.1.88:6443/，已信任，但提示 401，未授权的访问：
 
 ![ssl-success](images/ssl-success.png)
 
@@ -27,7 +27,7 @@ keytool -import -v -trustcacerts -alias appmanagement -file "PATH...\\ca.pem" -s
 
 ![admin-cert](images/admin-cert.png)
 
-**重启浏览器**，再次访问 https://172.27.128.150:6443/，提示选择一个浏览器证书，这里选中上面导入的 admin.pfx：
+**重启浏览器**，再次访问 https://192.168.1.88:6443/，提示选择一个浏览器证书，这里选中上面导入的 admin.pfx：
 
 ![select-cert](images/select-cert.png)
 
